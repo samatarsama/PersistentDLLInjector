@@ -5,6 +5,9 @@ PersistentDLLInjector is a C++ Visual Studio project that implements a method fo
 
 🛠️ This tool was created for my personal learning and educational purposes only. It is not intended for malicious or illegal use.
 
+## Note on Evasion
+Even when using a known `meterpreter` shellcode, a simple XOR encoding layer is often enough to bypass Windows Defender and similar antivirus solutions. This project includes the ability to load XOR-encoded shellcode and decode it in memory prior to injection.
+
 ## Features
 - Injects a DLL into a target process for persistent execution
 - Uses Windows API for process manipulation
